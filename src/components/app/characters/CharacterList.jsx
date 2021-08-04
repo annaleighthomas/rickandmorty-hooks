@@ -10,7 +10,7 @@ const CharacterList = ({ characters }) => {
     </li>
   ));
 
-  return <ul>characterElements</ul>;
+  return <ul>{characterElements}</ul>;
 };
 
 CharacterList.propTypes = {
