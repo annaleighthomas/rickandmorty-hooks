@@ -11,11 +11,10 @@ const DetailPage = ({ match }) => {
     setLoading(false);
   }, []);
 
+  if (loading) return <h1>Loading...</h1>;
+
   return (
     <>
-      {loading &&
-        <h1>loading...</h1>
-      }
       {character &&
         <div>
           <h2>{character.name}</h2>
